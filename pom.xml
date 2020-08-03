@@ -21,6 +21,15 @@
     </build>
 
 
+    <distributionManagement>
+        <repository>
+            <id>SnakeStudios</id>
+            <name>SnakeIO</name>
+            <url>https://maven.pkg.github.com/SnakeStudios/SnakeIO</url>
+        </repository>
+    </distributionManagement>
+
+
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.socket/socket.io-client -->
         <dependency>
