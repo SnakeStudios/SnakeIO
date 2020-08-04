@@ -8,7 +8,6 @@ import lombok.Getter;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +21,7 @@ public class EventsManager {
     }
 
     public void register(Object o) {
-        if (Arrays.stream(o.getClass().getAnnotatedInterfaces()).noneMatch(annotatedType -> annotatedType.getType().equals(Listener.class)))
+        if (!o.getClass().isAnnotationPresent(Listener.class))
             return;
 
         for (Method method : o.getClass().getDeclaredMethods()) {
@@ -61,16 +60,12 @@ public class EventsManager {
     }
 
     public ArrayList<Data> getData(Class<? extends Event> clazz) {
-        return this.getListeners().get(clazz);
+        return this.getListeners().getOrDefault(clazz, null);
     }
 
 
     public void checkEmpty() {
-        this.getListeners().entrySet().iterator().forEachRemaining(data -> {
-            if (data.getValue().isEmpty()) {
-                this.getListeners().remove(data.getKey());
-            }
-        });
+        this.getListeners().values().removeIf(ArrayList::isEmpty);
     }
 
     public void clear() {

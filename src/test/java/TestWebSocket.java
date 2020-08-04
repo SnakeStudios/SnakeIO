@@ -1,4 +1,6 @@
-import com.voteservers.snakeio.common.WebSocket;
+import com.voteservers.snakeio.SnakeIO;
+import com.voteservers.snakeio.common.WSClient;
+import listener.test;
 import lombok.SneakyThrows;
 
 import java.net.URI;
@@ -10,10 +12,11 @@ public class TestWebSocket {
     public static Date lastPing;
 
     public static void main(String[] args) {
+        SnakeIO.getEventsManager().register(new test());
 //        connectRealSocket();
         connectLocalSocket();
-    }
 
+    }
 
     public static long checkPing() {
         if (lastPing == null)
@@ -26,13 +29,13 @@ public class TestWebSocket {
 
     @SneakyThrows
     public static void connectLocalSocket() {
-        WebSocket webSocket = new WebSocket(new URI("ws://localhost:8000/"));
+        WSClient webSocket = new WSClient(new URI("ws://localhost:8002/"));
         webSocket.connect();
     }
 
     @SneakyThrows
     public static void connectRealSocket() {
-        WebSocket webSocket = new WebSocket(new URI("http://vs.voteservers.com:8003/"));
+        WSClient webSocket = new WSClient(new URI("http://vs.voteservers.com:8003/"));
         webSocket.connect();
     }
 
