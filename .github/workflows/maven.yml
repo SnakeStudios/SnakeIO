@@ -16,3 +16,8 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml -DskipTests
+
+    - name: Deploy with Maven
+      run: mvn deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
