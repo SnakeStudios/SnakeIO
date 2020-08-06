@@ -15,7 +15,7 @@ jobs:
         java-version: 1.8
 
     - name: Clean packages
-      run: mvn clean packages -DskipTests
+      run: mvn clean package -DskipTests
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
