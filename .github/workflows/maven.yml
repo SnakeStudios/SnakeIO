@@ -2,7 +2,7 @@ on:
   push:
 
 jobs:
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
 
@@ -14,10 +14,7 @@ jobs:
       with:
         java-version: 1.8
 
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml -DskipTests
-
     - name: Deploy with Maven
       run: mvn deploy -DskipTests
       env:
-        GITHUB_TOKEN: 4be10fdcdee4dd82e6874fc9c476369672d9af9c
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
