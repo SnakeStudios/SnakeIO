@@ -1,7 +1,7 @@
-package com.voteservers.snakeio.events.events;
+package com.voteservers.socket.events.events;
 
-import com.voteservers.snakeio.Utils.CloseStatus;
-import com.voteservers.snakeio.events.system.Event;
+import com.voteservers.socket.Utils.CloseStatus;
+import com.voteservers.socket.events.system.Event;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.java_websocket.WebSocket;

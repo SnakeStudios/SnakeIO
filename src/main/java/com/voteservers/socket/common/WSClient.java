@@ -1,12 +1,12 @@
-package com.voteservers.snakeio.common;
+package com.voteservers.socket.common;
 
-import com.voteservers.snakeio.SnakeIO;
-import com.voteservers.snakeio.Utils.CloseStatus;
-import com.voteservers.snakeio.events.events.ClientConnectEvent;
-import com.voteservers.snakeio.events.events.ClientDisconnectEvent;
-import com.voteservers.snakeio.events.events.ClientErrorEvent;
-import com.voteservers.snakeio.events.events.ClientMessageEvent;
-import com.voteservers.snakeio.task.ReconnectTask;
+import com.voteservers.socket.SnakeIO;
+import com.voteservers.socket.Utils.CloseStatus;
+import com.voteservers.socket.events.events.ClientConnectEvent;
+import com.voteservers.socket.events.events.ClientDisconnectEvent;
+import com.voteservers.socket.events.events.ClientErrorEvent;
+import com.voteservers.socket.events.events.ClientMessageEvent;
+import com.voteservers.socket.task.ReconnectTask;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 

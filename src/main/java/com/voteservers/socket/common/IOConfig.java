@@ -1,4 +1,4 @@
-package com.voteservers.snakeio.common;
+package com.voteservers.socket.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

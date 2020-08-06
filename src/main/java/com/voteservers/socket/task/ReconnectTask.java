@@ -1,7 +1,7 @@
-package com.voteservers.snakeio.task;
+package com.voteservers.socket.task;
 
 import com.google.common.util.concurrent.AbstractScheduledService;
-import com.voteservers.snakeio.SnakeIO;
+import com.voteservers.socket.SnakeIO;
 import org.java_websocket.client.WebSocketClient;
 
 import java.util.concurrent.TimeUnit;

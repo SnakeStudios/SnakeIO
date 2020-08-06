@@ -1,5 +1,5 @@
-import com.voteservers.snakeio.SnakeIO;
-import com.voteservers.snakeio.common.WSClient;
+import com.voteservers.socket.SnakeIO;
+import com.voteservers.socket.common.WSClient;
 import listener.test;
 import lombok.SneakyThrows;
 

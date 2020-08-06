@@ -1,6 +1,6 @@
-package com.voteservers.snakeio.events.events;
+package com.voteservers.socket.events.events;
 
-import com.voteservers.snakeio.events.system.Event;
+import com.voteservers.socket.events.system.Event;
 import lombok.Data;
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;

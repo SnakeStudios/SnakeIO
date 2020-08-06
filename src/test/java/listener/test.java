@@ -1,8 +1,8 @@
 package listener;
 
-import com.voteservers.snakeio.events.events.ClientConnectEvent;
-import com.voteservers.snakeio.events.system.EventHandler;
-import com.voteservers.snakeio.events.system.Listener;
+import com.voteservers.socket.events.events.ClientConnectEvent;
+import com.voteservers.socket.events.system.EventHandler;
+import com.voteservers.socket.events.system.Listener;
 
 @Listener
 public class test {

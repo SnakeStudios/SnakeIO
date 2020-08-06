@@ -1,8 +1,8 @@
-package com.voteservers.snakeio;
+package com.voteservers.socket;
 
-import com.voteservers.snakeio.client.SnakeIOClient;
-import com.voteservers.snakeio.managers.EventsManager;
-import com.voteservers.snakeio.server.SnakeIOServer;
+import com.voteservers.socket.client.SnakeIOClient;
+import com.voteservers.socket.managers.EventsManager;
+import com.voteservers.socket.server.SnakeIOServer;
 
 import java.util.logging.Logger;
 

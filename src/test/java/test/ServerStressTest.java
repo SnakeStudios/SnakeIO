@@ -23,7 +23,7 @@ package test;/*
  *  OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import com.voteservers.snakeio.common.WSClient;
+import com.voteservers.socket.common.WSClient;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.exceptions.WebsocketNotConnectedException;
 

@@ -1,9 +1,9 @@
-package com.voteservers.snakeio.managers;
+package com.voteservers.socket.managers;
 
-import com.voteservers.snakeio.Utils.Data;
-import com.voteservers.snakeio.events.system.Event;
-import com.voteservers.snakeio.events.system.EventHandler;
-import com.voteservers.snakeio.events.system.Listener;
+import com.voteservers.socket.Utils.Data;
+import com.voteservers.socket.events.system.Event;
+import com.voteservers.socket.events.system.EventHandler;
+import com.voteservers.socket.events.system.Listener;
 import lombok.Getter;
 
 import java.lang.reflect.Method;

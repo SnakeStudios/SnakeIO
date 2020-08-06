@@ -1,4 +1,4 @@
-package com.voteservers.snakeio.Utils;
+package com.voteservers.socket.Utils;
 
 import java.lang.reflect.Method;
 

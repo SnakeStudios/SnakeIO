@@ -1,7 +1,7 @@
-package com.voteservers.snakeio.events.system;
+package com.voteservers.socket.events.system;
 
-import com.voteservers.snakeio.SnakeIO;
-import com.voteservers.snakeio.Utils.Data;
+import com.voteservers.socket.SnakeIO;
+import com.voteservers.socket.Utils.Data;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;

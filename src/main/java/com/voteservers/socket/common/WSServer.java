@@ -1,7 +1,7 @@
-package com.voteservers.snakeio.common;
+package com.voteservers.socket.common;
 
-import com.voteservers.snakeio.Utils.CloseStatus;
-import com.voteservers.snakeio.events.events.*;
+import com.voteservers.socket.Utils.CloseStatus;
+import com.voteservers.socket.events.events.*;
 import org.java_websocket.WebSocket;
 import org.java_websocket.handshake.ClientHandshake;
 import org.java_websocket.server.WebSocketServer;

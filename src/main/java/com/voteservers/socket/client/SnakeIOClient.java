@@ -1,7 +1,7 @@
-package com.voteservers.snakeio.client;
+package com.voteservers.socket.client;
 
-import com.voteservers.snakeio.SnakeIO;
-import com.voteservers.snakeio.common.WSClient;
+import com.voteservers.socket.SnakeIO;
+import com.voteservers.socket.common.WSClient;
 import lombok.SneakyThrows;
 
 import java.net.URI;

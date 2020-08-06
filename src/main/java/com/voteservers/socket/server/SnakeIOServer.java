@@ -1,6 +1,6 @@
-package com.voteservers.snakeio.server;
+package com.voteservers.socket.server;
 
-import com.voteservers.snakeio.common.WSServer;
+import com.voteservers.socket.common.WSServer;
 
 import java.io.IOException;
 
